@@ -1,0 +1,118 @@
+/* ===== DARK PURPLE ELECTRIC GLOW THEME ===== */
+
+body, .stApp {
+    background: linear-gradient(145deg, #0b0e22, #1b1138, #180d2c);
+    font-family: "Poppins", sans-serif;
+    color: #e4e7ff;
+}
+
+/* Center main content */
+.block-container {
+    max-width: 900px !important;
+    margin: auto;
+    padding-top: 40px !important;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.header h1 {
+    font-size: 42px;
+    font-weight: 900;
+    background: linear-gradient(90deg, #9f5bff, #5dd9ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.header p {
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+/* CARD (Audio Preview) */
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 22px;
+    border-radius: 20px;
+    border: 1px solid rgba(170,150,255,0.25);
+    box-shadow: 0 0 40px rgba(120,70,255,0.25);
+    backdrop-filter: blur(12px);
+    margin-bottom: 25px;
+}
+
+/* VISUALIZATION SECTION TITLE */
+h3 {
+    font-weight: 700;
+    margin-top: 15px;
+    color: #b7c9ff;
+}
+
+/* TAB STYLE */
+.stTabs [data-baseweb="tab"] {
+    border-radius: 12px;
+    background: rgba(255,255,255,0.05);
+    padding: 8px 15px;
+    margin-right: 10px;
+}
+.stTabs [aria-selected="true"] {
+    background: linear-gradient(90deg, #a972ff, #5ce3ff);
+    color: #0b0e22 !important;
+    font-weight: 700;
+}
+
+/* PLOT CONTAINERS */
+.plot-container {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,0.15);
+    box-shadow: 0 0 35px rgba(120,70,255,0.18);
+    margin-bottom: 25px;
+}
+
+/* BUTTONS */
+.stButton > button {
+    background: linear-gradient(120deg, #8b4dff, #4cd1ff);
+    border-radius: 14px;
+    padding: 14px 35px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    box-shadow: 0 0 25px rgba(120,70,255,0.45);
+    transition: 0.25s ease;
+}
+.stButton > button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 35px rgba(160,110,255,0.75);
+}
+
+/* PREDICTION RESULT CARD */
+.result-card {
+    background: linear-gradient(140deg, #301950, #4c2d85);
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid rgba(200,100,255,0.35);
+    box-shadow: 0 0 40px rgba(150,100,255,0.5);
+    margin-top: 25px;
+    text-align: center;
+}
+
+/* GENRE TAG */
+.genre-pill {
+    display: inline-block;
+    padding: 14px 35px;
+    background: #bf8aff;
+    color: #170e30;
+    font-size: 26px;
+    font-weight: 900;
+    border-radius: 50px;
+    margin-top: 12px;
+    animation: pop 0.4s ease-in-out;
+}
+
+/* Subtle animation */
+@keyframes pop {
+    0% {transform: scale(0.65); opacity: 0;}
+    100% {transform: scale(1); opacity: 1;}
+}
